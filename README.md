@@ -32,10 +32,10 @@
  #### 英语显示:
   <img src="http://39.105.138.38:8080/mq/image/%E4%B8%AD%E6%96%87-%E8%8B%B1%E6%96%87%E6%98%BE%E7%A4%BA.png" width="80%" height="80%">
   
- #### 藏语显示
+ #### 藏语显示：
   <img src="http://39.105.138.38:8080/mq/image/%E4%B8%AD%E6%96%87-%E8%97%8F%E8%AF%AD%E6%98%BE%E7%A4%BA.png" width="80%" height="80%">
   
- ### 俄语显示:
+ #### 俄语显示:
   <img src="http://39.105.138.38:8080/mq/image/%E4%B8%AD%E6%96%87-%E4%BF%84%E8%AF%AD%E6%98%BE%E7%A4%BA.png" width="80%" height="80%">
   
  #### 蒙语显示:
