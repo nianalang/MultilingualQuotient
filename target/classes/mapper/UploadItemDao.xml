@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd"> 
+
+<mapper namespace="com.MultilingualQuotient.dao.UploadItemDao">
+	<!-- 插入一条商品数据 -->
+	<insert id="insertUploadItem" parameterType="uploadItem" useGeneratedKeys="true" keyProperty="upload_item_id">
+	
+		insert into upload_item(upload_item_kind_name,upload_item_kind_detail_name,upload_item_origin_name,
+			upload_item_origin_city_name,upload_item_origin_county_name,upload_item_TTM,upload_item_price,
+			upload_item_price_unit,upload_item_supply,upload_item_supply_unit,upload_item_character_shape,
+			upload_item_character_color,upload_item_save_method,upload_item_factory_address_name,
+			upload_item_factory_address_city_name,upload_item_factory_address_county_name,upload_item_phone,
+			upload_item_QQ) 
+			
+			values(#{upload_item_kind_name},#{upload_item_kind_detail_name},#{upload_item_origin_name},
+			#{upload_item_origin_city_name},#{upload_item_origin_county_name},#{upload_item_TTM,jdbcType=VARCHAR},#{upload_item_price},
+			#{upload_item_price_unit},#{upload_item_supply},#{upload_item_supply_unit},#{upload_item_character_shape},
+			#{upload_item_character_color},#{upload_item_save_method},#{upload_item_factory_address_name},
+			#{upload_item_factory_address_city_name},#{upload_item_factory_address_county_name},#{upload_item_phone},
+			#{upload_item_QQ})
+		
+	</insert>
+	
+	<!-- 查询时商品的种类 -->
+	<select id="quaryItemKind" resultType="uploadItemKind">
+		select upload_item_kind_id,upload_item_kind_name from upload_item_kind
+	</select>
+	<!-- 查询商品的种类细节 -->
+	<select id="quaryItemKindDetail" parameterType="java.lang.String" resultType="uploadItemKindDetail">
+		select upload_item_kind_detail_id,upload_item_kind_detail_name  from  upload_item_kind_detail 
+			where upload_item_kind_name=#{upload_item_kind_name}
+	</select>
+	
+	
+	<!-- 查询商品产地省级表 -->
+	<select id="quaryItemOrigin" resultType="uploadItemOrigin">
+		select upload_item_origin_id,upload_item_origin_name  from upload_item_origin
+	</select>
+	<!-- 查询商品产地市级表 -->
+	<select id="quaryItemOriginCity" parameterType="java.lang.String"  resultType="uploadItemOriginCity">
+		select upload_item_origin_city_id,upload_item_origin_city_name from upload_item_origin_city 
+			where upload_item_origin_name=#{upload_item_origin_name}
+	</select>
+	<!-- 查询商品产地县级表 -->
+	<select id="quaryItemOriginCounty" resultType="uploadItemOriginCounty">
+		select upload_item_origin_county_id,upload_item_origin_county_name from upload_item_origin_county 
+			where upload_item_origin_city_name=#{upload_item_origin_city_name}
+	</select>
+	
+	
+	<!-- 商品单位表 -->
+	<select id="quaryItemTTMUnit" parameterType="java.lang.String"  resultType="uploadItemTTMUnit">
+		select upload_item_TTM_unit_id,upload_item_TTM_unit_rate from upload_item_TTM_unit
+			where upload_item_TTM_unit_status=#{upload_item_TTM_unit_status}
+	</select>
+
+
+	<!-- 商品特征参数表 -->
+	<select id="quaryItemCharacterParameter" resultType="uploadItemCharacterParameter">
+		select upload_item_character_parameter_id,upload_item_character_parameter_form,upload_item_character_parameter_color
+			from upload_item_character_parameter
+	</select>
+	
+	
+	<!-- 商品保存方式表 -->
+	<select id="quaryItemSaveMethod" resultType="uploadItemSaveMethod">
+		select upload_item_save_method_id,upload_item_save_method from upload_item_save_method
+	</select>
+	
+	
+	<!-- 商品厂家地址表 -->
+	<select id="quaryItemFactoryAddress" resultType="uploadItemFactoryAddress">
+		select upload_item_factory_address_id,upload_item_factory_address_name from
+			upload_item_factory_address
+	</select>
+	<!-- 商品厂家地址市区表 -->
+	<select id="quaryItemFactoryAddressCity" parameterType="java.lang.String"  resultType="uploadItemFactoryAddressCity">
+		select upload_item_factory_address_city_id,upload_item_factory_address_city_name from upload_item_factory_address_city
+			where upload_item_factory_address_name=#{upload_item_factory_address_name}
+	</select>
+	<!-- 商品厂家地址地区表 -->
+	<select id="quaryItemFactoryAddressCounty" parameterType="java.lang.String"   resultType="uploadItemFactoryAddressCounty">
+		select upload_item_factory_address_county_id,upload_item_factory_address_county_name from upload_item_factory_address_county
+			where upload_item_factory_address_city_name=#{upload_item_factory_address_city_name}
+	</select>
+	
+	<select id="queryUploadItemById" parameterType="java.lang.Integer"  resultType="uploadItem">
+	select
+	upload_item_kind_name,upload_item_kind_detail_name,upload_item_origin_name,
+	upload_item_origin_city_name,upload_item_origin_county_name,upload_item_TTM,upload_item_price,
+	upload_item_price_unit,upload_item_supply,upload_item_supply_unit,upload_item_character_shape,
+	upload_item_character_color,upload_item_save_method,upload_item_factory_address_name,
+	upload_item_factory_address_city_name,upload_item_factory_address_county_name,upload_item_phone,
+	upload_item_QQ 
+	from upload_item where upload_item_id=#{upload_item_id} 
+	</select>
+</mapper>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd"> 
+
+<mapper namespace="com.MultilingualQuotient.dao.CorpusDao">
+	<!-- 根据汉语查询英语 -->
+	
+	<!-- item表示集合中每一个元素进行迭代时的别名，
+		   index指定一个名字，用于表示在迭代过程中，每次迭代到的位置，
+		   open表示该语句以什么开始，
+		   separator表示在每次进行迭代之间以什么符号作为分隔符，
+		   close表示以什么结束 -->
+	<select id="chineseTransformEnglish" parameterType="java.lang.String" resultType="java.lang.String">
+		select corpus_english from corpus where corpus_chinese=#{corpus_chinese}	
+	</select>
+	<!-- 根据英语查询为汉语 -->
+	<select id="englishTransformChinese" parameterType="java.lang.String" resultType="java.lang.String">
+		select corpus_chinese from corpus where corpus_english=#{corpus_english}
+	</select>
+	
+	
+	<!-- 根据汉语查询俄语 -->
+	<select id="chineseTransformRussian" parameterType="java.lang.String" resultType="java.lang.String">
+		select corpus_russian from corpus where corpus_chinese=#{corpus_chinese}
+	</select>
+	<!-- 根据俄语查询汉语 -->
+	<select id="russianTransformChinese" parameterType="java.lang.String" resultType="java.lang.String">
+		select corpus_chinese from corpus where corpus_russian=#{corpus_russian}
+	</select>
+	
+	<!-- 将汉语转换为藏语 -->
+	<select id="chineseTransformTibetab" parameterType="java.lang.String" resultType="java.lang.String">
+		select corpus_tibetab from corpus where corpus_chinese=#{corpus_chinese}
+	</select>
+	<!-- 将藏语转换为汉语  -->
+	<select id="tibetabTransformChinese" parameterType="java.lang.String" resultType="java.lang.String">
+		select corpus_chinese from corpus where corpus_tibetab=#{corpus_tibetab}
+	</select>
+	
+	
+
+	<!-- 将汉语转换为蒙古语 -->
+	<select id="chineseTransformMongolian" parameterType="java.lang.String" resultType="java.lang.String">
+		select corpus_mongolian from corpus where corpus_chinese=#{corpus_chinese}
+	</select>
+	<!-- 将蒙古语转换为汉语 -->
+	<select id="mongolianTransformChinese" parameterType="java.lang.String" resultType="java.lang.String">
+		select corpus_chinese from corpus where corpus_mongolian=#{corpus_mongolian}
+	</select>
+	
+	
+	<!-- 将汉语转换为泰语 -->
+	<select id="chineseTransformThai" parameterType="java.lang.String" resultType="java.lang.String">
+		select corpus_thai from corpus where corpus_chinese=#{corpus_chinese}
+	</select>
+	<!-- 将泰语转换为汉语 -->
+	<select id="thaiTransformChinese" parameterType="java.lang.String" resultType="java.lang.String">
+		select corpus_chinese from corpus where corpus_thai=#{corpus_thai}
+	</select>
+	
+	
+	<!-- 将汉语转换为希腊语 -->
+	<select id="chineseTransformGreek" parameterType="java.lang.String" resultType="java.lang.String">
+		select corpus_greek from corpus where corpus_chinese=#{corpus_chinese}
+	</select>
+	<!-- 将希腊语转换为汉语 -->
+	<select id="greekTransformChinese" parameterType="java.lang.String" resultType="java.lang.String">
+		select corpus_chinese from corpus where corpus_greek=#{corpus_greek}
+	</select>
+	
+	
+	<!--将汉语转换为土耳其语  -->
+	<select id="chineseTransformTurkish" parameterType="java.lang.String" resultType="java.lang.String">
+		select corpus_turkish from corpus where corpus_chinese=#{corpus_chinese}
+	</select>
+	<!-- 将土耳其语转换为汉语 -->
+	<select id="turkishTransformChinese" parameterType="java.lang.String" resultType="java.lang.String">
+		select corpus_chinese from corpus where corpus_turkish=#{corpus_turkish}
+	</select>
+	
+	
+</mapper>
