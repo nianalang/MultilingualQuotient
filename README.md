@@ -20,22 +20,33 @@
  eclipse + MySQL
  
  ## 项目功能截图
- ### 上传中文商品
- <img src="http://39.105.138.38:8080/mq/image/%E4%B8%AD%E6%96%87%E4%B8%8A%E4%BC%A0.png" width="50%" height="50%">
  
- ### 中文显示
-  <img src="http://39.105.138.38:8080/mq/image/%E4%B8%AD%E6%96%87-%E4%B8%AD%E6%96%87%E6%98%BE%E7%A4%BA.png" width="50%" height="50%">
- ### 英语显示
-  <img src="http://39.105.138.38:8080/mq/image/%E4%B8%AD%E6%96%87-%E8%8B%B1%E6%96%87%E6%98%BE%E7%A4%BA.png" width="50%" height="50%">
- ### 藏语显示
-  <img src="http://39.105.138.38:8080/mq/image/%E4%B8%AD%E6%96%87-%E8%97%8F%E8%AF%AD%E6%98%BE%E7%A4%BA.png" width="50%" height="50%">
+ ### 这里只展示中文上传的截图
+ 
+ #### 上传中文商品
+ <img src="http://39.105.138.38:8080/mq/image/%E4%B8%AD%E6%96%87%E4%B8%8A%E4%BC%A0.png" width="80%" height="80%">
+ 
+ #### 中文显示
+  <img src="http://39.105.138.38:8080/mq/image/%E4%B8%AD%E6%96%87-%E4%B8%AD%E6%96%87%E6%98%BE%E7%A4%BA.png" width="80%" height="80%">
+  
+ #### 英语显示
+  <img src="http://39.105.138.38:8080/mq/image/%E4%B8%AD%E6%96%87-%E8%8B%B1%E6%96%87%E6%98%BE%E7%A4%BA.png" width="80%" height="80%">
+  
+ #### 藏语显示
+  <img src="http://39.105.138.38:8080/mq/image/%E4%B8%AD%E6%96%87-%E8%97%8F%E8%AF%AD%E6%98%BE%E7%A4%BA.png" width="80%" height="80%">
+  
  ### 俄语显示
-  <img src="http://39.105.138.38:8080/mq/image/%E4%B8%AD%E6%96%87-%E4%BF%84%E8%AF%AD%E6%98%BE%E7%A4%BA.png" width="50%" height="50%">
- ### 蒙语显示
-  <img src="http://39.105.138.38:8080/mq/image/%E4%B8%AD%E6%96%87-%E8%92%99%E8%AF%AD%E6%98%BE%E7%A4%BA.png" width="50%" height="50%">
- ### 泰语显示
-  <img src="http://39.105.138.38:8080/mq/image/%E4%B8%AD%E6%96%87-%E6%B3%B0%E8%AF%AD%E6%98%BE%E7%A4%BA.png" width="50%" height="50%">
- ### 土耳其语显示
-  <img src="http://39.105.138.38:8080/mq/image/%E4%B8%AD%E6%96%87-%E5%9C%9F%E8%80%B3%E5%85%B6%E6%98%BE%E7%A4%BA.png" width="50%" height="50%">
- ### 希腊语显示
-  <img src="http://39.105.138.38:8080/mq/image/%E4%B8%AD%E6%96%87-%E5%B8%8C%E8%85%8A%E6%98%BE%E7%A4%BA.png" width="50%" height="50%">
+  <img src="http://39.105.138.38:8080/mq/image/%E4%B8%AD%E6%96%87-%E4%BF%84%E8%AF%AD%E6%98%BE%E7%A4%BA.png" width="80%" height="80%">
+  
+ #### 蒙语显示
+  <img src="http://39.105.138.38:8080/mq/image/%E4%B8%AD%E6%96%87-%E8%92%99%E8%AF%AD%E6%98%BE%E7%A4%BA.png" width="80%" height="80%">
+  
+ #### 泰语显示
+  <img src="http://39.105.138.38:8080/mq/image/%E4%B8%AD%E6%96%87-%E6%B3%B0%E8%AF%AD%E6%98%BE%E7%A4%BA.png" width="80%" height="80%">
+  
+ #### 土耳其语显示
+  <img src="http://39.105.138.38:8080/mq/image/%E4%B8%AD%E6%96%87-%E5%9C%9F%E8%80%B3%E5%85%B6%E6%98%BE%E7%A4%BA.png" width="80%" height="80%">
+  
+ #### 希腊语显示
+  <img src="http://39.105.138.38:8080/mq/image/%E4%B8%AD%E6%96%87-%E5%B8%8C%E8%85%8A%E6%98%BE%E7%A4%BA.png" width="80%" height="80%">
+  
